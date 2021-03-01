@@ -4,21 +4,21 @@ function FormAction({caption, onClick}){
     "flex",
     "items-center",
     "justify-center",
-    "justify-self-center",
-    "px-8",
-    "py-4",
+    "px-2",
+    "py-2",
     "my-4",
     "border",
-    "border-transparent",
+    "border-pink-600",
     "text-base",
     "font-medium",
     "rounded-lg",
     "text-white",
     "bg-transparent",
-    "hover:bg-pink-500",
-    "md:py-4",
+    "hover:border-pink-300",
+    "md:py-2",
     "md:text-lg",
-    "md:px-10"
+    "md:px-10",
+    "lg:mx-auto"
   ];
   return(
     <button

@@ -17,7 +17,7 @@ function Login(){
     //validaciones
     let error = null;
     if (name ==="password"){
-      error = (/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,32}$/).test(value) ? null :"Contraseña Inválida";
+      error = (/^(?=.*\d)(?=.*A-Z)(?=.*a-z)(?=.*^\w\d\s:)(^\s){8,32}$/).test(value) ? null :"Contraseña Inválida";
     }
     //
     setFormData({ ...formData, [name]: value , [name + "Error"]: error});
