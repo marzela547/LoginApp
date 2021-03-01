@@ -13,6 +13,13 @@
   }
 }
 
+body{
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image: url(/src/img/loginfondo.jpg);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
