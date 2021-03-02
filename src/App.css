@@ -4,7 +4,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-  background-image: url(/src/img/fondo2.png);
+  background-image: url(/src/img/fondo2.jpg);
 }
 
 @media (min-width: 1024px){
