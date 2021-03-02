@@ -1,7 +1,7 @@
 function Form({children}){
   return (
-    <form className="block text-white flex-wrap left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute box-border py-16 px-7 min-w-max lg:min-w-min">
-        <h1 className="border-b-4 border-pink-600 text-4xl mb-12 px-1 py-0 w-28 font-bold">Login</h1>
+    <form className="block text-white flex-wrap left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:w-3/5 md:h-1/2 md:text-3xl md:py-16 md:px-7 absolute box-border lg:py-16 lg:px-7 lg:min-w-min">
+        <h1 className="border-b-4 border-pink-600 text-2xl mb-3 mt-2 md:border-b-8 md:mb-12 md:text-5xl md:mt-0 lg:text-4xl lg:mb-12 px-1 py-0 lg:w-28 font-bold">Login</h1>
         {children}
     </form>
   );

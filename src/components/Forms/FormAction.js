@@ -15,10 +15,12 @@ function FormAction({caption, onClick}){
     "text-white",
     "bg-transparent",
     "hover:border-pink-300",
-    "md:py-2",
-    "md:text-lg",
+    "md:py-4",
+    "md:text-3xl",
     "md:px-10",
-    "lg:mx-auto"
+    "mx-auto",
+    "lg:text-lg",
+    "lg:py-2"
   ];
   return(
     <button
