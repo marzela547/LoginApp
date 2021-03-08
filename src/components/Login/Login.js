@@ -23,6 +23,7 @@ function Login(){
     setFormData({ ...formData, [name]: value , [name + "Error"]: error});
   }
   return (
+    <section id="loginpage" style={{backgroundColor:"red"}}>
     <Form>
       <FormField
         type="text"
@@ -57,6 +58,7 @@ function Login(){
       >
       </FormAction>
     </Form>
+    </section>
   );
 }
 

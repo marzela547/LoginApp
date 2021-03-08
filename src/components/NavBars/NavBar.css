@@ -1,13 +1,21 @@
-header nav ul {
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+nav ul {
   display: flex;
   list-style: none;
   padding: 0px;
   margin: 0px;
   align-items: center;
+  flex-direction: row;
 }
-header nav ul li a{
+nav ul li a{
   display: inline-flex;
   padding: 1rem 1.5rem;
   text-decoration: none;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }

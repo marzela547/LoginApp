@@ -1,14 +1,15 @@
 
-body{
-  background-attachment:fixed;
+#loginpage{
+  overflow: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   background-image: url(/src/img/fondo2.jpg);
+  min-height: 100vh;
 }
 
 @media (min-width: 1024px){
-  body{
+#loginpage{
     background-image: url(/src/img/fondo3.jpg);
   }
 }
