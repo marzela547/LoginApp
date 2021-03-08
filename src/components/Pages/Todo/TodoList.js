@@ -36,6 +36,7 @@ function TodoList({todos, doneHandler, deleteHandler}){
     <section className="TodoList">
       <ul>
          {todoItems}
+         <hr></hr>
       </ul>
     </section>
   );
