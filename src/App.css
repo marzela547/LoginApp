@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -10,7 +10,14 @@
   color: white;
 }
 
-
+body{
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:cover;
+  background-image: url(/src/img/fondo4.jpg);
+  min-height: 100vh;
+  font-family: 'RocknRoll One', sans-serif;
+}
 #loginpage{
   overflow: auto;
   background-repeat: no-repeat;
@@ -19,6 +26,8 @@
   background-image: url(/src/img/fondo2.jpg);
   min-height: 100vh;
 }
+
+
 
 @media (min-width: 1024px){
 #loginpage{

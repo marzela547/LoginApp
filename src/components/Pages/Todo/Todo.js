@@ -42,14 +42,14 @@ function Todo(){
   }
   const tmpTodos = todoData.todos.map( (o)=>{return JSON.stringify(o)} ).join(" | ");
   return (
-    <section>
+    <section className="w-4/5 mt-20 left-1/2 rounded-lg transform -translate-x-1/2 absolute box-border lg:text-2xl">
      <NewTodo
       onChange={onChange}
       value={todoData.newTodo}
       onAddNew={onAddNew}
      >
      </NewTodo>
-      <TodoList 
+      <TodoList
         todos={todoData.todos}
         doneHandler={doneHandler}
         deleteHandler={deleteHandler}

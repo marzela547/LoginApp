@@ -2,7 +2,7 @@ import { MdDone, MdDelete} from 'react-icons/md';
 
 // ()=>     fat arrow functions  funciones de flecha gorda ;
 
-function TodoListItem({key, descripcion, id, completed, doneHandler, deleteHandler}){
+function TodoListItem({ descripcion, id, completed, doneHandler, deleteHandler}){
   const onClick = (e)=>{
     doneHandler(id);
   }
@@ -12,10 +12,12 @@ function TodoListItem({key, descripcion, id, completed, doneHandler, deleteHandl
 
   const myClass = (completed)?"striked": "";
   return (
-    <li className=" flex border rounded-lg mx-5 my-2 h-10 items-center bg-purple-200 hover:bg-purple-500 text-large text-purple-900" key={key}>
+    <li className=" flex border rounded-lg my-2 h-10 items-center justify-between bg-purple-300 hover:bg-purple-500 text-large text-purple-900">
     <span className={myClass}>{descripcion}</span>
-    <MdDone className="m-3" onClick={onClick}></MdDone>
-    <MdDelete onClick={onDeleteClick}></MdDelete>
+    <div className="flex items-center">
+      <MdDone className="m-3" onClick={onClick}></MdDone>
+      <MdDelete onClick={onDeleteClick}></MdDelete>
+    </div>
   </li>);
 }
 
@@ -23,7 +25,7 @@ function TodoList({todos, doneHandler, deleteHandler}){
   const todoItems = todos.map((o)=>{
     return (
       <TodoListItem
-        key={o.doneHandlerid}
+        key={o.id}
         descripcion={o.description}
         id={o.id}
         completed={o.completed}
@@ -33,7 +35,7 @@ function TodoList({todos, doneHandler, deleteHandler}){
     )
   });
   return (
-    <section className="TodoList">
+    <section className="TodoList w-full">
       <ul>
          {todoItems}
          <hr></hr>

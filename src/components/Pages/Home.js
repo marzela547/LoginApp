@@ -1,7 +1,11 @@
+import imgurl from "../../img/perfil.PNG"
+
 function Home(){
   return (
     <section>
-      <h1>Todo WApp V1</h1>
+      <div className="foto w-72 h-72 rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute">
+        <img src={imgurl}></img>
+      </div>
     </section>
   );
 }
