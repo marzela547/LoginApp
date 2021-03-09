@@ -12,8 +12,8 @@ function NewTodo({ onChange, value, onAddNew}){
           onChange={onChange}
           value={value}
           caption="Nuevo Todo"
-          className="flex p-2 m-2 w-60 bg-white shadow"
-          labelClassName="flex w-5/6 self-center"
+          className="flex p-2 m-2 w-1/2 lg:w-60 bg-white shadow"
+          labelClassName="flex text-base lg:w-5/6 self-center"
           containerClassName="flex"
           onKeyUp={(e) => { if (e.keyCode == 13) { onAddNew(e);} }}
         />
