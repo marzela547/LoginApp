@@ -12,7 +12,7 @@ function TodoListItem({descripcion, id, completed, doneHandler, deleteHandler}){
 
   const myClass = (completed)?"striked": "";
   return (
-    <li>
+    <li className=" flex border rounded-lg mx-5 my-2 bg-purple-200 hover:bg-purple-500 text-base text-purple-900">
     <span className={myClass}>{descripcion}</span>
     <MdDone onClick={onClick}></MdDone>
     <MdDelete onClick={onDeleteClick}></MdDelete>
