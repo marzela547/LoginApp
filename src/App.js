@@ -3,7 +3,7 @@ import BrandHeader from './components/BrandHeader/BrandHeader';
 import Login from './components/Pages/Login';
 import Home from './components/Pages/Home';
 import Todo from './components/Pages/Todo/Todo';
-
+import Covid from './components/Pages/covid/Covid';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import Cards from './components/Cards/Cards';
 //import CardHolder from './components/Cards/CardHolder';
@@ -26,6 +26,9 @@ function App() {
           <Route path="/login" exact>
               <Login></Login>
           </Route>
+          <Route path="/covid" exact>
+              <Covid></Covid>
+          </Route>
         </Switch>
       </section>
     </Router>
@@ -33,17 +36,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-<section>
-        <img src={imgMeme} alt="Un meme" />
-      </section>
-      <CardHolder>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
-      </CardHolder>
-
-*/
