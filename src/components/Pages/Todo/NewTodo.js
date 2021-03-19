@@ -24,3 +24,4 @@ function NewTodo({ onChange, value, onAddNew}){
 }
 
 export default NewTodo;
+
